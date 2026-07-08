@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Hpaper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-body">
+
+  <div class="admin-container">
+    <h1>Administration Hpaper</h1>
+
+    <div id="loginBox" class="admin-box">
+      <h2>Connexion admin</h2>
+
+      <input type="email" id="email" placeholder="Email admin" />
+      <input type="password" id="password" placeholder="Mot de passe admin" />
+
+      <button onclick="loginAdmin()">Se connecter</button>
+      <p id="loginMessage"></p>
+    </div>
+
+    <div id="dashboardBox" class="admin-box hidden">
+      <div class="admin-top">
+        <h2>Gestion des articles</h2>
+        <button onclick="logoutAdmin()">Déconnexion</button>
+      </div>
+
+      <div class="form-grid">
+        <input type="hidden" id="productId" />
+
+        <input type="text" id="name" placeholder="Nom de l'article" />
+
+        <select id="category">
+          <option value="">Choisir une catégorie</option>
+          <option value="Papier A4 / A3">Papier A4 / A3</option>
+          <option value="Papier couché">Papier couché</option>
+          <option value="Papier bristol">Papier bristol</option>
+          <option value="Papier autocopiant">Papier autocopiant</option>
+          <option value="Papier photo">Papier photo</option>
+          <option value="Papier kraft">Papier kraft</option>
+        </select>
+
+        <input type="text" id="price" placeholder="Prix ou indication, ex: Sur devis" />
+
+        <input type="text" id="image" placeholder="Lien image, optionnel" />
+
+        <textarea id="description" placeholder="Description de l'article"></textarea>
+
+        <button onclick="saveProduct()">Enregistrer l'article</button>
+        <button onclick="clearForm()" class="secondary-admin">Annuler</button>
+      </div>
+
+      <h3>Articles publiés</h3>
+      <div id="adminProducts"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

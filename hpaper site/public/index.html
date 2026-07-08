@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hpaper - Vente de papiers professionnels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">H<span>paper</span></div>
+
+    <nav class="nav" id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+      <p class="badge">Fournisseur de papiers professionnels</p>
+      <h1>Hpaper, votre partenaire pour tous types de papiers</h1>
+      <p>
+        Nous sommes spécialisés dans la vente de toutes sortes de papiers :
+        papiers bureautiques, papiers d’impression, papiers cartonnés,
+        papiers photo, papiers autocopiants, papiers emballage et plus encore.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary">Demander un devis</a>
+        <a href="#produits" class="btn secondary">Voir nos produits</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Qualité • Rapidité • Prix sérieux</h3>
+      <p>Des papiers adaptés aux entreprises, écoles, imprimeries, bureaux, commerces et organisations.</p>
+    </div>
+  </section>
+
+  <section class="section" id="produits">
+    <div class="section-title">
+      <p>Notre catalogue</p>
+      <h2>Nos principaux types de papiers</h2>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Papier A4 & A3</h3>
+        <p>Papier de bureau pour impression, photocopie, administration, écoles et entreprises.</p>
+      </div>
+
+      <div class="card">
+        <h3>Papier couché</h3>
+        <p>Idéal pour flyers, brochures, affiches, catalogues, cartes et supports publicitaires.</p>
+      </div>
+
+      <div class="card">
+        <h3>Papier bristol</h3>
+        <p>Support solide pour cartes de visite, invitations, certificats et documents premium.</p>
+      </div>
+
+      <div class="card">
+        <h3>Papier autocopiant</h3>
+        <p>Utilisé pour factures, reçus, bons de commande, carnets et documents administratifs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Papier photo</h3>
+        <p>Pour impressions photo de qualité, studios, souvenirs, albums et présentations visuelles.</p>
+      </div>
+
+      <div class="card">
+        <h3>Papier kraft & emballage</h3>
+        <p>Pour emballages, sacs, protection de produits et conditionnement professionnel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-title">
+      <p>Pourquoi choisir Hpaper ?</p>
+      <h2>Une solution fiable pour vos besoins en papier</h2>
+    </div>
+
+    <div class="service-list">
+      <div>
+        <h3>Large choix</h3>
+        <p>Nous proposons plusieurs types de papiers selon vos besoins professionnels.</p>
+      </div>
+
+      <div>
+        <h3>Prix compétitifs</h3>
+        <p>Des tarifs adaptés aux particuliers, entreprises, écoles, imprimeries et revendeurs.</p>
+      </div>
+
+      <div>
+        <h3>Commande rapide</h3>
+        <p>Vous pouvez demander un devis ou passer commande directement par téléphone ou WhatsApp.</p>
+      </div>
+
+      <div>
+        <h3>Approvisionnement sérieux</h3>
+        <p>Hpaper vous accompagne pour avoir les bons papiers au bon moment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="apropos">
+    <div class="about-text">
+      <p class="badge">À propos de nous</p>
+      <h2>Hpaper, spécialiste de la vente de papiers</h2>
+      <p>
+        Hpaper est une entreprise spécialisée dans la fourniture de papiers pour les besoins
+        bureautiques, scolaires, commerciaux, administratifs et professionnels.
+      </p>
+      <p>
+        Notre mission est simple : aider les entreprises, écoles, imprimeries, commerces,
+        églises et organisations à trouver rapidement le papier adapté à leurs travaux.
+      </p>
+    </div>
+
+    <div class="about-box">
+      <h3>Nos clients</h3>
+      <ul>
+        <li>Entreprises et bureaux</li>
+        <li>Écoles et universités</li>
+        <li>Imprimeries et studios graphiques</li>
+        <li>Commerces et revendeurs</li>
+        <li>Organisations et églises</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <p>Contact</p>
+      <h2>Demandez votre devis maintenant</h2>
+    </div>
+
+    <div class="contact-box">
+      <div>
+        <h3>Hpaper</h3>
+        <p>Vente de toutes sortes de papiers professionnels.</p>
+
+        <p><strong>Téléphone :</strong> +243 XXX XXX XXX</p>
+        <p><strong>WhatsApp :</strong> +243 XXX XXX XXX</p>
+        <p><strong>Email :</strong> contact@hpaper.com</p>
+        <p><strong>Adresse :</strong> Bukavu, RDC</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Votre nom" required />
+        <input type="tel" placeholder="Votre téléphone" required />
+        <input type="email" placeholder="Votre e-mail" />
+        <textarea placeholder="Quel type de papier cherchez-vous ?" required></textarea>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Hpaper. Tous droits réservés.</p>
+    <p>Vente de papiers professionnels</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/243000000000" target="_blank">WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
